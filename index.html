@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="desciption" content="Papeleria creativa. Diseños. Tarjetas personalizadas. Sticker.">
+        <title>CC-REGALOS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <style>
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5 {
+                font-family: "Raleway", sans-serif
+            }
+
+            body{
+                background: #f72580;
+                background: radial-gradient(circle, rgb(233, 194, 211) 34%, rgba(233, 148, 172, 1) 92%);
+            }
+
+            .w3-third img {
+                margin-bottom: -6px;
+                opacity: 0.8;
+                cursor: pointer
+            }
+
+            .w3-third img:hover {
+                opacity: 1
+            }
+
+            /* Asegúrate de que este CSS esté en tu <style> tag */
+
+.w3-third {
+    height: 500px; /* O la altura que desees para igualar las otras imágenes */
+    display: flex; /* Para que la imagen dentro se alinee bien */
+    align-items: center; /* Centra verticalmente la imagen si es más pequeña */
+    justify-content: center; /* Centra horizontalmente */
+    overflow: hidden; /* Muy importante para recortar si la imagen es muy grande */
+}
+
+.w3-third img {
+    width: 100%;    /* La imagen ocupa el 100% del ancho del contenedor */
+    height: 100%;   /* La imagen intenta ocupar el 100% del alto */
+    object-fit: cover; /* ¡Esta es la clave! Cubre el área, recortando si es necesario para mantener la proporción */
+    /* Otros estilos que ya tengas, como opacity, cursor, margin-bottom */
+    margin-bottom: -6px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.w3-third img:hover {
+    opacity: 1;
+}
+
+/* El resto de tu CSS */
+            
+            .float-wa{
+                position:fixed;
+                width:60px;
+                height:60px;
+                bottom:40px;
+                right:40px;
+                background-color:#25d366;
+                color:#FFF;
+                border-radius:50px;
+                text-align:center;
+                font-size:30px;
+                z-index:100;
+            }
+
+            .img2 {
+                align-items: center;
+                width: 70%;
+            }
+
+            /* --- ESTILO AÑADIDO PARA OCULTAR PÁGINAS --- */
+            .page-content {
+                display: none; /* Oculta todas las páginas de imágenes por defecto */
+            }
+
+            
+            /* --- 🎨 ESTILOS RESPONSIVE 🎨 --- */
+
+            /* Estilo base para el contenido principal (para PC) */
+            .w3-main {
+                margin-left: 300px;
+            }
+
+            /* Para Tablets (pantallas de hasta 992px de ancho) */
+            @media (max-width: 992px) {
+                .w3-main {
+                    margin-left: 0; /* Eliminamos el margen para que ocupe todo el ancho */
+                }
+                .w3-sidebar {
+                    display: none; /* El menú lateral se oculta por defecto */
+                }
+                .w3-third {
+                    width: 50%; /* Las imágenes se muestran en 2 columnas */
+                }
+            }
+
+            /* Para Celulares (pantallas de hasta 600px de ancho) */
+            @media (max-width: 600px) {
+                .w3-third {
+                    width: 100%; /* Las imágenes se apilan en 1 sola columna */
+                    padding: 8px 0; /* Ajustamos el espacio para la vista móvil */
+                }
+                .w3-bar-item.page-link, .w3-bar-item.w3-button {
+                     padding: 8px 12px; /* Hacemos los botones de paginación un poco más compactos */
+                }
+            }
+            
+    
+        </style>
+    </head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+    <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
+        style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+        <h3 class="w3-padding-64 w3-center"><b>CC-Regalos<br>Diseños Con Amor ❤</b></h3>
+        <meta name="CCregalos" content="Diseños con amor. Diseños personalizados. ">
+        <a href="javascript:void(0)" onclick="w3_close()"
+            class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">SOBRE MI</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACTO</a>
+    </nav>
+
+    <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+        <span class="w3-left w3-padding">CC-Regalos</span>
+        <meta name="Trabajos de diseños" content="Trabajos realiados con mucho amor para cada cliente. Stickers, Topper, Tarjetas, diseños.">
+        <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+    </header>
+
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+        title="close side menu" id="myOverlay"></div>
+
+    <div class="w3-main" style="margin-left:300px">
+
+        <div class="w3-hide-large" style="margin-top:83px"></div>
+
+        <div id="page-1" class="page-content w3-row">
+            <div class="w3-third">
+                <img src="./img/tarjetas.jpg" style="width:100%" onclick="onClick(this)" alt="Tarjeta para emprendimiento con QR.">
+            </div>
+            <div class="w3-third">
+                <img src="./img/voucher.jpg" style="width:100%" onclick="onClick(this)" alt="Voucher personalizado para tu emprendimiento + sobre.">
+            </div>
+            <div class="w3-third">
+                <img src="./img/vitto-store.jpeg" style="width:100%" onclick="onClick(this)" alt="Tarjeta personalizada para emprendimiento.">
+            </div>
+            <div class="w3-third">
+                <img src="./img/tarjetas-de-regalos.jpg" style="width:100%" onclick="onClick(this)" alt="Tarjeta de regalo personalizada para emprendimiento.">
+            </div>
+            <div class="w3-third">
+                <img src="./img/tarjeta-pesonal.jpg" style="width:100%" onclick="onClick(this)" alt="Tarjeta de presentacion profesional.">
+            </div>
+            <div class="w3-third">
+                <img src="./img/tarjeta-personalizada-doñaflor.jpg" style="width:100%" onclick="onClick(this)" alt="Tarjeta de regalo personalizada para emprendimiento.">
+            </div>
+        </div>
+
+        <div id="page-2" class="page-content w3-row">
+            <div class="w3-third">
+                <img src="img/banderin-emma.png" style="width:100%" onclick="onClick(this)" alt="Banderin personalizado de cumpleaños.">
+            </div>
+            <div class="w3-third">
+                <img src="img/banderin-diadelniño.jpg" style="width:100%" onclick="onClick(this)" alt="Banderin personalizado de cumpleaños.">
+            </div>
+            <div class="w3-third">
+                <img src="img/banderin-cumple.jpg" style="width:100%" onclick="onClick(this)" alt="Banderin personalizado de cumpleaños.">
+            </div>
+            <div class="w3-third">
+                <img src="img/banderines-cumple.jpg" style="width:100%" onclick="onClick(this)" alt="Banderin personalizado de cumpleaños.">
+            </div>
+            <div class="w3-third">
+                <img src="img/banderin-mia.jpeg" style="width:100%" onclick="onClick(this)" alt="Banderin personalizado de cumpleaños.">
+            </div>
+            <div class="w3-third">
+                <img src="img/banderin.ori" style="width:100%" onclick="onClick(this)" alt="Banderin personalizado de cumpleaños.">
+            </div>
+        </div>
+
+        <div id="page-3" class="page-content w3-row">
+            <div class="w3-third">
+                <img src="img/tarjeta+sobre-person.+harryPotter.jpg" style="width:100%" onclick="onClick(this)" alt="Tarjeta personalizada estilo Harry Potter.">
+            </div>
+            <div class="w3-third">
+                <img src="img/tarjeta-agradecimiento.jpg" style="width:100%" onclick="onClick(this)" alt="Tarjeta personalizada. Diseñamos lo que queres.">
+            </div>
+            <div class="w3-third">
+                <img src="img/tarjeta-MIa-creaciones.jpg" style="width:100%" onclick="onClick(this)" alt="Tarjeta personalizada para emprendimiento.">
+            </div>
+            <div class="w3-third">
+                <img src="img/etiquetas-flavia-corrado.jpg" style="width:100%" onclick="onClick(this)" alt="Etiquetas para ropa. Empredimiento ShowRoom Flavia Corrado.">
+            </div>
+            <div class="w3-third">
+                <img src="img/indicaciones-Carco-pasteleria.jpg" style="width:100%" onclick="onClick(this)" alt="Cartel de idicaciones para Torta. Empredimiento Caroc Pasteleria.">
+            </div>
+            <div class="w3-third">
+                <img src="img/Terjata-Yega.jpg" style="width:100%" onclick="onClick(this)" alt="Tarjeta para empredimiento. Yega accesorios.">
+            </div>
+        </div>
+        
+        <div id="page-4" class="page-content w3-row">
+             <div class="w3-third">
+                <img src="img/tarjeton-para-vela.jpg" style="width:100%" onclick="onClick(this)" alt="Base para presentacion de Velas.">
+            </div> <div class="w3-third">
+                <img src="img/portaPancho.jpg" style="width:100%" onclick="onClick(this)" alt="Porta pancho personalizado para cumpleaños.">
+            </div>
+             <div class="w3-third">
+                <img src="img/porta-pancho-giuliana.jpg" style="width:100%" onclick="onClick(this)" alt="Porta pancho personalizado para cumpleaños.">
+            </div>
+             <div class="w3-third">
+                <img src="img/porta-pancho.jpg" style="width:100%" onclick="onClick(this)" alt="Porta pancho personalizado para cumpleaños.">
+            </div>
+             <div class="w3-third">
+                <img src="img/letra-E-3D.jpg" style="width:100%" onclick="onClick(this)" alt="Letras 3D personalizado.">
+            </div>
+             <div class="w3-third">
+                <img src="img/letra-M-3D.jpg" style="width:100%" onclick="onClick(this)" alt="Letras 3D personalizado.">
+            </div>
+        </div>
+
+        <div id="page-5" class="page-content w3-row">
+             <div class="w3-third">
+                <img src="img/porta-alias-plastificado.jpg" style="width:100%" onclick="onClick(this)" alt="Porta alias personalizado + base.">
+            </div> <div class="w3-third">
+                <img src="img/sticker-tornasolado.jpg" style="width:100%" onclick="onClick(this)" alt="Sticker personalizado para empredimiento estilo Holografico.">
+            </div>
+             <div class="w3-third">
+                <img src="img/cierra-bolsa+circuloadhesivo.jpg" style="width:100%" onclick="onClick(this)" alt="Cierra bolsa + adhesivo circular para empredimiento.">
+            </div>
+             <div class="w3-third">
+                <img src="img/fotos-polaroid.jpg" style="width:100%" onclick="onClick(this)" alt="Fotos estilo polaroid. Tambien podes conseguirla con iman.">
+            </div>
+             <div class="w3-third">
+                <img src="img/etiquetas.jpg" style="width:100%" onclick="onClick(this)" alt="Etiquetas para productos. Empresa Punto Limpio.">
+            </div>
+             <div class="w3-third">
+                <img src="img/funda-personalizada.jpg" style="width:100%" onclick="onClick(this)" alt="Fundas para celulares personalizadas todos los modelos.">
+            </div>
+        </div>
+
+        <div id="page-6" class="page-content w3-row">
+             <div class="w3-third">
+                <img src="img/adhesivo-resistente-al-agua.jpg" style="width:100%" onclick="onClick(this)" alt="Adhesivos Mates y resistentes al agua para tu empredimiento.">
+            </div> <div class="w3-third">
+                <img src="img/adhesivo-circular-MIA.jpg" style="width:100%" onclick="onClick(this)" alt="Adhesivos Mates y resistentes al agua para tu empredimiento.">
+            </div>
+             <div class="w3-third">
+                <img src="img/adhesivo-brilloso.jpg" style="width:100%" onclick="onClick(this)" alt="Adhesivos Mates y resistentes al agua para tu empredimiento.">
+            </div>
+             <div class="w3-third">
+                <img src="img/cierrabolsa-vitto-store.jpg" style="width:100%" onclick="onClick(this)" alt="Packaging para empredimientos.">
+            </div>
+             <div class="w3-third">
+                <img src="img/adhesivo-dulcelili.jpeg" style="width:100%" onclick="onClick(this)" alt="Adhesivos Mates y resistentes al agua para tu empredimiento.">
+            </div>
+             <div class="w3-third">
+                <img src="img/packaging ciro pizzas.jpeg" style="width:100%" onclick="onClick(this)" alt="Packaging para empredimientos.">
+            </div>
+        </div>
+
+        <div id="page-7" class="page-content w3-row">
+             <div class="w3-third">
+                <img src="img/Topper-angie.jpg" style="width:100%" onclick="onClick(this)" alt="Cake Topper para cumpleaños.">
+            </div> <div class="w3-third">
+                <img src="img/topper-3D-animado.jpg" style="width:100%" onclick="onClick(this)" alt="Cake Topper para cumpleaños.">
+            </div>
+             <div class="w3-third">
+                <img src="img/topper-numero-2.jpg" style="width:100%" onclick="onClick(this)" alt="Cake Topper para cumpleaños.">
+            </div>
+             <div class="w3-third">
+                <img src="img/topper-n°7.jpg" style="width:100%" onclick="onClick(this)" alt="Cake Topper para cumpleaños.">
+            </div>
+             <div class="w3-third">
+                <img src="img/topper-torre.jpg" style="width:100%" onclick="onClick(this)" alt="Cake Topper para cumpleaños.">
+            </div>
+             <div class="w3-third">
+                <img src="img/topper-olivia2.jpg" style="width:100%" onclick="onClick(this)" alt="Cake Topper para cumpleaños.">
+            </div>
+        </div>
+
+         <div id="page-8" class="page-content w3-row">
+             <div class="w3-third">
+                <img src="img/cake-topper-emma.jpg" style="width:100%" onclick="onClick(this)" alt="Cake Topper para cumpleaños.">
+            </div> <div class="w3-third">
+                <img src="img/presentacion-cakeTopper.jpg" style="width:100%" onclick="onClick(this)" alt="Cake Topper para cumpleaños.">
+            </div>
+             <div class="w3-third">
+                <img src="img/Topper7-en-torta.jpg" style="width:100%" onclick="onClick(this)" alt="Cake Topper para cumpleaños.">
+            </div>
+             <div class="w3-third">
+                <img src="img/adhesivo-candy-bar.jpg" style="width:100%" onclick="onClick(this)" alt="Candy Bar.">
+            </div>
+             <div class="w3-third">
+                <img src="img/mini-porta-pochoclo.jpg" style="width:100%" onclick="onClick(this)" alt="Portas pochoclos estilo mini.">
+            </div>
+             <div class="w3-third">
+                <img src="img/stich-caja.jpg" style="width:100%" onclick="onClick(this)" alt="Caja personalizada para regalos.">
+            </div>
+        </div>
+
+        <div id="page-9" class="page-content w3-row">
+             <div class="w3-third">
+                <img src="img/mini-tablas-de-multiplicar.jpg" style="width:100%" onclick="onClick(this)" alt="Tabalas de multiplicar mini estilo llavero.">
+            </div> <div class="w3-third">
+                <img src="img/tarjetitas-feliz-dia-ma.jpg" style="width:100%" onclick="onClick(this)" alt="Tarjetas personalizada estilo holografico con brillo 3D. ">
+            </div>
+             <div class="w3-third">
+                <img src="img/encedendor-personalizado+porta-encendedor.jpg" style="width:100%" onclick="onClick(this)" alt="Encededor personalizado + porta encendedor.">
+            </div>
+             <div class="w3-third">
+                <img src="img/carteleria.jpg" style="width:100%" onclick="onClick(this)" alt="Carteleria menu.">
+            </div>
+             <div class="w3-third">
+                <img src="img/Empaque-personalizado.jpg" style="width:100%" onclick="onClick(this)" alt="Diseño de empaques.">
+            </div>
+             <div class="w3-third">
+                <img src="img/bingo-personalizado.jpg" style="width:100%" onclick="onClick(this)" alt="Juego de bingo personalizado.">
+            </div>
+        </div>
+
+        <div id="page-10" class="page-content w3-row">
+             <div class="w3-third">
+                <img src="img/tarjeta+stciker-babyshower.jpg" style="width:100%" onclick="onClick(this)" alt="Tarjetas y stciker para baby shower.">
+            </div> <div class="w3-third">
+                <img src="img/adhesivos+fotos-personalizadas.jpg" style="width:100%" onclick="onClick(this)" alt="Adhesivo fotos personalizadas. ">
+            </div>
+             <div class="w3-third">
+                <img src="img/rifas-personalizadas.jpg" style="width:100%" onclick="onClick(this)" alt="Diseños para rifas.">
+            </div>
+             <div class="w3-third">
+                <img src="img/adhesivos shampoo.jpeg" style="width:100%" onclick="onClick(this)" alt="Adhesivos para envases.">
+            </div>
+             <div class="w3-third">
+                <img src="img/funda-afa.jpeg" style="width:100%" onclick="onClick(this)" alt="Fundas para celulares.">
+            </div>
+             <div class="w3-third">
+                <img src="img/porta-aros y collar.jpeg" style="width:100%" onclick="onClick(this)" alt="Porta collar y aros.">
+            </div>
+        </div>
+
+        <div id="page-11" class="page-content w3-row">
+             <div class="w3-third">
+                <img src="img/tarjeta-taller-corrado.jpeg" style="width:100%" onclick="onClick(this)" alt="Tarjeta  service.">
+            </div> <div class="w3-third">
+                <img src="img/adhesivos+fotos-personalizadas.jpg" style="width:100%" onclick="onClick(this)" alt="Adhesivo fotos personalizadas. ">
+            </div>
+             <div class="w3-third">
+                <img src="img/funda3.jpeg" style="width:100%" onclick="onClick(this)" alt="Funda personalizada.">
+            </div>
+             <div class="w3-third">
+                <img src="img/packaging.jpeg" style="width:100%" onclick="onClick(this)" alt="Packaging para empredimiento.">
+            </div>
+             <div class="w3-third">
+                <img src="img/packaging delirios.jpeg" style="width:100%" onclick="onClick(this)" alt="Packaging para empredimiento.">
+            </div>
+             <div class="w3-third">
+                <img src="img/adhesivo bran.jpeg" style="width:100%" onclick="onClick(this)" alt="Adhesivos circulares.">
+            </div>
+        </div>
+
+        
+        <div id="page-12" class="page-content w3-row">
+             <div class="w3-third">
+                <img src="img/funda-dragonball.jpeg" style="width:100%" onclick="onClick(this)" alt="Funda personalizada.">
+            </div> <div class="w3-third">
+                <img src="img/topper maria emilia.jpeg" style="width:100%" onclick="onClick(this)" alt="Cake topper cumpleaños.">
+            </div>
+             <div class="w3-third">
+                <img src="img/topper emily.jpeg" style="width:100%" onclick="onClick(this)" alt="Cake topper cumpleaños.">
+            </div>
+             <div class="w3-third">
+                <img src="img/menu helados.jpeg" style="width:100%" onclick="onClick(this)" alt="Carteleria menu.">
+            </div>
+             <div class="w3-third">
+                <img src="img/tarjeta didactica.jpeg" style="width:100%" onclick="onClick(this)" alt="Llavero tipo tarjeta didactica para niño/as.">
+            </div>
+             <div class="w3-third">
+                <img src="img/pedido personalizado.jpeg" style="width:100%" onclick="onClick(this)" alt="Pedido personalizado que cuenta con fotos, tarjetas, adhesivos.">
+            </div>
+        </div>
+
+        <div id="page-13" class="page-content w3-row">
+             <div class="w3-third">
+                <img src="img/adhesivo-circular,florido.jpeg" style="width:100%" onclick="onClick(this)" alt="Adhesivo personalizados.">
+            </div> <div class="w3-third">
+                <img src="img/tarjeta florida dia de la madre.jpeg" style="width:100%" onclick="onClick(this)" alt="Tarjeta personalizada.">
+            </div>
+             <div class="w3-third">
+                <img src="img/tarjeta primaveral.jpeg" style="width:100%" onclick="onClick(this)" alt="Tarjeta personalizada estilo primaveral.">
+            </div>
+             <div class="w3-third">
+                <img src="img/caja milk.jpeg" style="width:100%" onclick="onClick(this)" alt="Caja estilo Milk personalizada.">
+            </div>
+             <div class="w3-third">
+                <img src="img/adhesivolobo.jpeg" style="width:100%" onclick="onClick(this)" alt="Adhesivo circular personalizado.">
+            </div>
+             <div class="w3-third">
+                <img src="img/Funda-personalizadaROSA.png" style="width:100%" onclick="onClick(this)" alt="Funda para celulares personalizadas.">
+            </div>
+        </div>
+
+        <div class="w3-center w3-pale-red w3-padding-32">
+            <div class="w3-bar" id="pagination-container">
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-black" onclick="navigatePage('prev')">«</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-black page-link" onclick="changePage(1)">1</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-black page-link" onclick="changePage(2)">2</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-black page-link" onclick="changePage(3)">3</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-black page-link" onclick="changePage(4)">4</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-black page-link" onclick="changePage(5)">5</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-black page-link" onclick="changePage(6)">6</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-black page-link" onclick="changePage(7)">7</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-black page-link" onclick="changePage(8)">8</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-black page-link" onclick="changePage(9)">9</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-black page-link" onclick="changePage(10)">10</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-black page-link" onclick="changePage(11)">11</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-black page-link" onclick="changePage(12)">12</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-black page-link" onclick="changePage(13)">13</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-black" onclick="navigatePage('next')">»</a>
+            </div>
+        </div>
+
+        <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+            <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption"></p>
+            </div>
+        </div>
+
+        <div class="w3-container w3-pink w3-center w3-text-light-grey w3-padding-32" id="about">
+            <h4><b>Sobre Mi</b></h4>
+            <meta name="Comunnity manager" content="Manejo de redes sociales.">
+            <img src="img/YO.jpeg" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
+            <div class="w3-content w3-justify" style="max-width:600px">
+                <p>¡Hola! Soy Cande y a mis 25 años, soy la fundadora y el corazón creativo detrás de CC.Regalos, un estudio de diseño donde las ideas toman forma.
+
+                    Mi misión es ser cómplice de tus proyectos, transformando tus ideas en creaciones únicas y memorables. Ya sea que busques el regalo perfecto o necesites materializar la identidad visual de tu marca, aquí encontrarás un espacio para hacerlo realidad. La base de mi trabajo es la dedicación; abordo cada proyecto como si fuera propio, una filosofía que me impulsa a ser extremadamente detallista y a entregar resultados de alta calidad, siempre con un acabado delicado y profesional.
+
+                    Este sueño, que hoy es un emprendimiento en constante crecimiento, nació a principios de 2025 de forma humilde: con muchos miedos, una sola impresora y la idea de crear fundas personalizadas. La superación diaria, la constancia y la increíble confianza de una comunidad de clientes fieles han sido el motor de esta evolución.
+
+                    Hoy, me enorgullece ofrecer un servicio integral que abarca desde la papelería creativa y el diseño de logos, hasta la administración de redes sociales y la consultoría para dar vida a tus proyectos.
+
+                    Gracias por llegar hasta aquí y por considerar mi trabajo para ser parte de tus momentos especiales. ¡Bienvenido/a a CC.Regalos, estoy lista para escuchar tu idea y convertirla en realidad. </p>
+            </div>
+        </div>
+
+        <div class="w3-container w3-pale-red w3-padding-32 w3-padding-large" id="contact">
+            <div class="w3-content" style="max-width:600px">
+                <h4 class="w3-center"><b>¡Contactame!</b></h4>
+                <p>Queres algun pedido en particular? escribime, con gusto podemos hacer realidad tu idea. Me gustan los nuevos desafios.</p>
+                <ul class="list-group list-group-flush mb-4">
+                        <i class="bi bi-geo-alt-fill text-primary me-3 list-group-item bg-transparent border-0 d-flex align-items-center"></i><span> San Pedro de Jujuy</span>
+                        <br> <a href="https://wa.me/+5493888572072"><i class="bi bi-whatsapp text-primary me-3 list-group-item bg-transparent border-0 d-flex align-items-center"></i><span> +54 9 3888-572072</a></span>
+                        <br><i class="bi bi-instagram text-primary me-3 list-group-item bg-transparent border-0 d-flex align-items-center"></i>
+                        </i><span> <a href="https://www.instagram.com/cc.regalos/" class="btn btn-light btn-lg mt-3"> Instagram</a></span>
+                        <br>
+                        <img class="img2" src="./img/banner-ccregalos.jpeg" alt="servicios cc.regalos">
+                </ul>
+            </div>
+        </div>
+
+        <a href="https://wa.me/+5493888572072?text=Hola" class="float-wa" target="_blank">
+            <i class="fa fa-whatsapp" style="margin-top:16px;"></i>
+        </a>
+
+        <footer class="w3-container w3-pale-red w3-padding-32 w3-grey">
+        </footer>
+
+        <div class="w3-black w3-center w3-padding-24"> <a href="https://www.instagram.com/tech.fix.ok/" title="spaces" target="_blank" class="w3-hover-opacity">Tech-Fix 2025 &copy;</a></div>
+
+        </div>
+
+    <script>
+        // Script para Sidebar (sin cambios)
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Script para Galería Modal (sin cambios)
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        // === NUEVO SCRIPT PARA LA PAGINACIÓN ===
+
+        let currentPage = 1;
+        const totalPages = 13; // Total de páginas que tienes. ¡Actualiza este número si agregas más!
+
+        function changePage(page) {
+            // Validar que la página esté dentro de los límites
+            if (page < 1) {
+                page = 1;
+            }
+            if (page > totalPages) {
+                page = totalPages;
+            }
+            currentPage = page;
+
+            // 1. Ocultar todos los contenedores de páginas
+            const pageContents = document.getElementsByClassName("page-content");
+            for (let i = 0; i < pageContents.length; i++) {
+                pageContents[i].style.display = "none";
+            }
+
+            // 2. Mostrar solo el contenedor de la página actual
+            const activePage = document.getElementById("page-" + currentPage);
+            if (activePage) {
+                activePage.style.display = "block";
+            }
+
+            // 3. Actualizar el botón activo en la paginación
+            const pageLinks = document.getElementsByClassName("page-link");
+            for (let i = 0; i < pageLinks.length; i++) {
+                pageLinks[i].classList.remove("w3-black"); // Quitar la clase activa de todos
+                if (parseInt(pageLinks[i].innerText) === currentPage) {
+                    pageLinks[i].classList.add("w3-black"); // Poner la clase activa solo al actual
+                }
+            }
+        }
+        
+        function navigatePage(direction) {
+            if (direction === 'prev') {
+                changePage(currentPage - 1);
+            } else if (direction === 'next') {
+                changePage(currentPage + 1);
+            }
+        }
+
+        // Mostrar la primera página por defecto cuando el sitio carga
+        window.onload = function() {
+            changePage(1);
+        };
+
+    </script>
+</body>
+</html>
